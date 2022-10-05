@@ -1,15 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
 #last{
     background-color: #333333;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 243px;
 }
 #last>div{
-    display: inline-block;
-    width: 50% auto;
+
+    width: 50% ;
+    margin: 45px;
+    
+}
+#last>div>div>img{
+    
+    margin-right: 15px;
+}
+#last>div>div>P{
+
+
+line-height: 25px;
+color: white;
+}
+#last>div>div{
+
     
 }
 
+#left-arrow>img{
+    position:absolute;
+    align-items: center;
+}
+#rigth-arrow>img{
+    opacity: 100%;
 
 
+}
 article{
     background-color: #EEEEEE;
 }
@@ -19,6 +45,8 @@ body{
     padding: 0;
     max-width: 728px;
     color: #888888;
+    background-color: white;
+    border: 20px black
 }
 
 
@@ -112,24 +140,45 @@ span{
     text-align: center;
     
 }
+
 #your-style>div{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    
+    opacity: 75%;
+    
 }
+
+    
+    
 
 
 #your-style>div> p{
-    position: absolute;
     color: white;
-    opacity: 100%;
     font-style: normal;
+    opacity: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
-#your-style>div> img{
-    opacity: 75%;
-    width: 100%;
-    margin-bottom: 20px;
-}
+#industrial{
+    background-image:url("/lotv/img/Rectangle\ 11.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+}  
+#modern{
+    height: 80px;
+    background-image:url("/lotv/img/Rectangle\ 12.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}  
+#classic{
+    height: 80px;
+    background-image:url("/lotv/img/Rectangle\ 13.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}  
 
 
 
