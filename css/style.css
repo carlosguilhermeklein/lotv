@@ -1,192 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
-#last{
-    background-color: #333333;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 243px;
+
+html {
+    font-size: 80%;
 }
 
-#last>div{
-    width: 50% ;
-    margin: 45px; 
-}
-
-#last>div>div>img{ 
-    margin-right: 15px;
-}
-
-#last>div>div>P{
-line-height: 25px;
-color: white;
-}
-
-#left-arrow>img{
-    position:absolute;
-    align-items: center;
-}
-
-#rigth-arrow>img{
-    opacity: 100%;
-
+/* Seletor CSS */
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    width: 100%;
 
 }
 
-article{
+body * {
+    box-sizing: border-box;
+}
+
+body>header {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+
+header>* {
+    display: inline-block;
+    margin: 0;
+}
+
+body>header>img {
+    float: right;
+    margin-top: 1.6rem;
+}
+
+body>main {
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    padding: 1rem;
+}
+
+#banner>img {
+    width: 100%;
+}
+
+#sales {
+    padding: 0 1rem;
+    width: 100%;
+}
+
+#sales>article {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+#sales>article img {
+    width: 100%;
+    margin-bottom: -.5rem;
+}
+
+#sales>article>footer {
+    padding: 1.2rem;
     background-color: #EEEEEE;
 }
 
-body{
-    font-family: 'Ropa Sans', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 728px;
-    color: #888888;
-    background-color: white;
-    border: 20px black
-}
-
-#top-header{
-    box-shadow: 0 5px 5px lightgrey;
-}
-
-#top-header > *{
-    display: inline-block;
-}
-
-#top-header > img{
-    display: inline-block;
-}
-
-main{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-#name{
-    margin-left: 5%;
-    color: #777777;
-    font-size: 30px;
-    font-weight: 100;
-}
-
-#subname{
-    color: #AAAAAA;
-   
-}
-
-#dropdown-menu{
-float: right;
- margin: 35px;
-}
-
-#banner{ 
-margin-top: 40px;
-align-items: center;
-}
-
-#teste{
-    width: 100%;
-}
-
-#sales{
-    
-    align-items: center;
-}
-
-.sell-houses{
-    max-width: 43%;
-    display: inline-block;
-}
-
-.sell-houses-images{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-p{
-    margin: 5px;
-}
-
-span{
-    margin: 5px
-}
-
-.sales >article >footer> p{
-    text-align: justify;
-    font-size: 12px;
-    margin: 15px;
-}
-
-.rigth{
-    float: right;
-    border-radius: 20px;
-    background-color: lightgreen;
-    padding: 5px;
-    margin-right: 15px;
-    color: white;
-}
-
-#rigthsale{
-    background-color: #DC9730;
-}
-
-.price{
-    margin: 15px;
-    font-size: 30px;
-}
-
-#article-rigth{
-    float: right;
-}
-
-#your-style{
-    margin-top: 40px;
-     margin-bottom: 40px;
+#sales span {
     font-size: 25px;
-    font-weight: 400;
     line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
 }
 
-#your-style>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    opacity: 75%;
-}
-
-#your-style>div> p{
+.right {
+    border-radius: 1.5rem;
+    background-color: #51d275;
     color: white;
-    font-style: normal;
-    opacity: 100%;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    padding: 0 1rem;
+    float: right;
 }
 
-#industrial{
-    background-image:url("/lotv/img/Rectangle\ 11.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 80px;
-} 
+.right.sale {
+    background-color: #dc9730;
+}
 
-#modern{
-    height: 80px;
-    background-image:url("/lotv/img/Rectangle\ 12.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}  
+#your-style {
+    padding: 0 1rem;
+}
 
-#classic{
-    height: 80px;
-    background-image:url("/lotv/img/Rectangle\ 13.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}  
+#your-style * {
+    width: 100%;
+    text-align: center;
+
+}
+
+.opaque {
+    opacity: 0.5;
+    color: white;
+    font-size: 2rem;
+}
+
+.styles {
+    min-height: 5rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+
+}
+
+.industrial {
+    background-image: url('/lotv/img/Rectangle\ 11.png');
+}
+
+.modern {
+    background-image: url('/lotv/img/Rectangle\ 12.png');
+}
+
+.classic {
+    background-image: url('/lotv/img/Rectangle\ 13.png');
+}
 
 
 
+footer {
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #333333;
+}
+
+footer>img {
+    width: 100%;
+}
+
+section#contacts {
+    color: white;
+    text-align: center;
+
+}
+
+section#contacts>img {
+    margin: .5rem;
+
+}
 
 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media (min-width: 600px) {
+    #sales>article {
+        width: 40%;
+        display: inline-block;
+    }
+
+    #sales>article:last-child {
+        float: right;
+    }
+
+    footer>img {
+        width: 40%;
+        display: inline-block;
+    }
+
+    footer>#contacts {
+        width: 40%;
+        display: inline-block;
+        text-align: start;
+        margin-left: 8rem;
+
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+
+
+/* Seletores por classe */
+/* .styles {
+  opacity: 0.5;
+} */
+
+/* Seletores por ID */
+/* #primeira {
+  opacity: 1;
+} */
+
+/* Seletores por descendência */
+/* #your-style img {
+  opacity: 0.5;
+} */
+
+/* Seletores por child (filhos) */
+/* #your-style > img {
+  opacity: 0.2;
+} */
